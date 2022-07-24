@@ -14,7 +14,7 @@ puts "Creating 5 restaurants"
   Restaurant.create!(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_name,
-    phone_number: Faker::PhoneNumber,
+    phone_number: Faker::PhoneNumber.phone_number,
     category: Restaurant::CATEGORY.sample
   )
 end
