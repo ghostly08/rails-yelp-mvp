@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :restaurants, except: [ :update, :destroy ]
-  root to: "restaurants#index"
+  resources :restaurants, except: [ :update, :destroy ] do
+    root to: "restaurants#index"
 
-  # resources :restaurants do
-  #   resources :restaurants, only: [ :new, :create ]
-  # end
-
-
+    resources :reviews, only: [:new] do
+    end
+  end
 end
