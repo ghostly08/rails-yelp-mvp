@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/heartcombo/simple_form.git
+  revision: 31fe25504771bd6cd425b585a4e0ed652fba4521
+  specs:
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -172,9 +180,6 @@ GEM
       sprockets-rails
       tilt
     semantic_range (3.0.0)
-    simple_form (5.1.0)
-      actionpack (>= 5.2)
-      activemodel (>= 5.2)
     spring (4.0.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -223,7 +228,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails
   sass-rails (>= 6)
-  simple_form
+  simple_form!
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
