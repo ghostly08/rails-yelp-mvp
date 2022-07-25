@@ -4,6 +4,6 @@
   <%= f.input :name %>
   <%= f.input :address %>
   <%= f.input :phone_number %>
-  <%= f.input :category, collection: [['0', 'Chinese'], ['1', 'Italian'], ['2', 'Japanese'], ['3', 'French'], ['4', 'Belgian']], label_method: :second, value_method: :first %>
+  <%= f.input :category, collection: [['0', 'chinese'], ['1', 'italian'], ['2', 'japanese'], ['3', 'french'], ['4', 'belgian']], label_method: :second, value_method: :first %>
   <%= f.submit "Submit restaurant", class: "btn btn-primary" %>
 <% end %>
