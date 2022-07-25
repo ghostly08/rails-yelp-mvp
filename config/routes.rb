@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   root to: "restaurants#index"
   # get 'reviews/new'
-  resources :restaurants, except: [ :update ] do
-    resources :reviews, only: [:new, :create]
+  resources :restaurants do
+    resources :reviews, only: [:index, :new, :create]
   end
 
-  resources :reviews, only: [:destroy] do
+  resources :reviews, only: [:show, :edit, :update, :destroy] do
   end
 end
