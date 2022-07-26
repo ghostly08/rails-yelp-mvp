@@ -6,7 +6,7 @@
 <%= link_to 'see all restaurants', restaurants_path %>
 <%= link_to 'Review this restaurant', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
 <%= link_to "Delete restaurant",
-  restaurant_path(@restaurant),
+  restaurant_path,
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
 %>
 
@@ -19,7 +19,7 @@
     <li class="list-group-item"><%= review.rating %></li>
     <%= link_to "Delete",
       review_path(review),
-       data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+      method: :delete, data: {confirm: "Are you sure?"}
     %>
   <% end %>
 
