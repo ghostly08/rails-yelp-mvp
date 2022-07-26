@@ -1,4 +1,4 @@
-<h1>New Restaurant</h1>
+<h1>Edit <%= @restaurant.name %></h1>
 
 <%= simple_form_for [ @restaurant ] do |f| %>
   <%= f.input :name %>
@@ -7,5 +7,3 @@
   <%= f.input :category, collection_select: [['0', 'chinese'], ['1', 'italian'], ['2', 'japanese'], ['3', 'french'], ['4', 'mediterranean'], ['5', 'asian'], ['6', 'indian'], ['7', 'vegetarian & vegan']], label_method: :second, value_method: :first %>
   <%= f.submit "Submit restaurant", class: "btn btn-primary" %>
 <% end %>
-
-<%# <%= link_to 'Cancel', restaurant_path %>
